@@ -51,7 +51,7 @@ const Header = () => {
 				<Link to="/find-store" className="nav-icon">
 					<FontAwesomeIcon icon={faMapMarkerAlt} /> Find Store
 				</Link>
-				<Link to="/sign-in" className="nav-icon_signin">
+				<Link to="/signin" className="nav-icon_signin">
 					Sign In
 				</Link>
 				<Link to="/join" className="nav-icon join-now">

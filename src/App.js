@@ -10,8 +10,10 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Reward from "./components/Reward";
 import GiftCard from "./components/GiftCard";
-import MenuInnerpage from "./components/Menu/MenuInnerpage";
+import SignIn from "./components/Signin";
 import MenuInnerHeader from "./components/Menu/MenuInnerHeader";
+import FindStore from "./components/FindStore";
+import JoinNow from "./components/JoinNow";
 
 function App() {
 	return (
@@ -53,6 +55,36 @@ function App() {
 						<>
 							<Header />
 							<GiftCard />
+							<Footer />
+						</>
+					}
+				/>
+				<Route
+					path="/find-store"
+					element={
+						<>
+							<Header />
+							<FindStore />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/signin"
+					element={
+						<>
+							<Header />
+							<SignIn />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/join"
+					element={
+						<>
+							<Header />
+							<JoinNow />
 							<Footer />
 						</>
 					}

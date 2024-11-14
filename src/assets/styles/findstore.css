@@ -1,0 +1,115 @@
+.store-locator-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 0 8rem;
+  padding: 20px;
+}
+
+.store-locator-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.store-locator-right {
+  flex: 2;
+  min-width: 400px;
+}
+
+.store-locator-left h2,
+.store-locator-left h3 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.store-search-input {
+  width: 100%;
+  /* Ensure the input spans the full width of its container */
+  padding: 20px 50px 10px 10px;
+  /* Adjusted padding for better layout */
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.filter-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  /* Ensure it stays within container bounds */
+  transform: translateY(-50%);
+  border: none;
+  background-color: aliceblue;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  color: #008248;
+  font-size: 1rem;
+  border: 1px solid #008248;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.privacy-notice {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+iframe {
+  width: 100%;
+  /* Ensure iframe is responsive */
+  height: 800px;
+  border-radius: 10px;
+}
+
+.store-locator-left p {
+  margin: 0;
+  /* Remove padding to prevent overflow */
+}
+
+@media (max-width: 768px) {
+  .store-locator-container {
+    flex-direction: column;
+    margin: 0;
+    gap: 3rem;
+    /* Adjust margin for smaller screens */
+  }
+
+  .store-locator-right iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .store-locator-left,
+  .store-locator-right {
+    min-width: 100%;
+  }
+
+  .store-search-input {
+    padding: 25px 40px 8px 8px;
+    /* Adjusted padding for smaller screens */
+  }
+
+  .store-locator-right iframe {
+    height: 250px;
+  }
+
+  .store-locator-left p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .privacy-notice p {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}
